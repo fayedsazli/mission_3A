@@ -1,0 +1,91 @@
+body {
+  background-color: #FFFDF3;
+}
+header {
+  background-color: #ffffff;
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: center; /* Pastikan kontainer berada di tengah secara horizontal */
+  align-items: center; /* Vertikal tengah */
+  height: 80px;
+  padding: 0 120px;
+  border-bottom: 1px solid #3a35411f;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Atur jarak antar elemen */
+  align-items: center;
+  max-width: 1200px; /* Tetapkan batas lebar */
+  width: 100%;
+  padding: 0;
+  margin: 0 auto; /* Margin otomatis untuk memastikan perataan tengah */
+}
+
+.logo img {
+  height: 100%; /* Sesuaikan ukuran logo */
+  max-height: 56px; /* Opsional: Batasi tinggi maksimum */
+}
+
+section {
+  width: 100%; /* Lebar penuh */
+  height: 100vh; /* Gunakan tinggi layar penuh */
+  display: flex; /* Gunakan flexbox */
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+  margin: 0; /* Hilangkan margin */
+  padding: 0; /* Hilangkan padding */
+}
+
+.masuk {
+  border: 1px solid #f1f1f1; /* Gaya border */
+  width: 448px; /* Tetapkan lebar tetap */
+  border-radius: 4px; /* Sudut membulat */
+  background-color: #ffffff; /* Warna latar belakang */
+  padding: 36px; /* Spasi dalam */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+  
+  /* Penyesuaian posisi */
+  position: fixed; /* Tetap relatif terhadap viewport */
+  top: 50%; /* Tempatkan 50% dari atas */
+  left: 50%; /* Tempatkan 50% dari kiri */
+  transform: translate(-50%, -50%); /* Geser untuk memastikan elemen di tengah */
+}
+
+.desc {
+  text-align: center; /* Pusatkan teks */
+}
+
+.desc h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.desc p {
+  font-size: 16px;
+  color: #666666;
+}
+
+.form {
+  width: 100%; /* Atur lebar form */
+  max-width: 400px; /* Tetapkan lebar maksimum */
+  margin: 0 auto; /* Pusatkan form */
+  display: flex; /* Gunakan flexbox untuk tata letak fleksibel */
+  flex-direction: column; /* Susunan kolom vertikal */
+  gap: 10px; /* Tambahkan jarak antar elemen */
+}
+
+label {
+  font-size: 16px; /* Ukuran font label */
+  font-weight: bold; /* Tebalkan teks label */
+  margin-bottom: 4px; /* Jarak antara label dan input */
+}
+
+input {
+  width: 100%; /* Input mengikuti lebar kontainer */
+  padding: 10px; /* Spasi di dalam input */
+  font-size: 14px; /* Ukuran font untuk teks input */
+  border: 1px solid #ccc; /* Tambahkan border */
+  border-radius: 4px; /* Sudut membulat */
+  box-sizing: border-box; /* Pastikan padding termasuk dalam ukuran total */
+}
