@@ -1,5 +1,14 @@
-body {
+*{
+  box-sizing: border-box;
+}
+
+
+html,body {
   background-color: #FFFDF3;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  overflow: hidden;
 }
 header {
   background-color: #ffffff;
@@ -9,6 +18,10 @@ header {
   height: 80px;
   padding: 0 120px;
   border-bottom: 1px solid #3a35411f;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin: 0;
 }
 
 .container {
@@ -17,8 +30,10 @@ header {
   align-items: center;
   max-width: 1200px; /* Tetapkan batas lebar */
   width: 100%;
+  z-index: 100;
   padding: 0;
   margin: 0 auto; /* Margin otomatis untuk memastikan perataan tengah */
+  
 }
 
 .logo img {
@@ -27,13 +42,16 @@ header {
 }
 
 section {
-  width: 100%; /* Lebar penuh */
-  height: 100vh; /* Gunakan tinggi layar penuh */
+  
+  width: 1440px; /* Lebar penuh */
+  height: 994px; /* Gunakan tinggi layar penuh */
   display: flex; /* Gunakan flexbox */
   justify-content: center; /* Pusatkan secara horizontal */
   align-items: center; /* Pusatkan secara vertikal */
-  margin: 0; /* Hilangkan margin */
-  padding: 0; /* Hilangkan padding */
+  padding-top: 24px; /* Hilangkan padding */
+  padding-bottom: 24px;
+  top: 60px;
+  z-index: 1;
 }
 
 .masuk {
@@ -43,12 +61,12 @@ section {
   background-color: #ffffff; /* Warna latar belakang */
   padding: 36px; /* Spasi dalam */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-  
+  margin-top: 64px;
   /* Penyesuaian posisi */
   position: fixed; /* Tetap relatif terhadap viewport */
   top: 50%; /* Tempatkan 50% dari atas */
   left: 50%; /* Tempatkan 50% dari kiri */
-  transform: translate(-50%, -50%); /* Geser untuk memastikan elemen di tengah */
+  transform: translate(-50%, -50%); 
 }
 
 .desc {
@@ -73,12 +91,20 @@ section {
   display: flex; /* Gunakan flexbox untuk tata letak fleksibel */
   flex-direction: column; /* Susunan kolom vertikal */
   gap: 10px; /* Tambahkan jarak antar elemen */
+  color:#4A505C;
 }
 
 label {
   font-size: 16px; /* Ukuran font label */
-  font-weight: bold; /* Tebalkan teks label */
   margin-bottom: 4px; /* Jarak antara label dan input */
+ 
+}
+.inputfield{
+  margin-bottom: 16px;
+}
+
+span{
+  color: red;
 }
 
 input {
@@ -88,4 +114,168 @@ input {
   border: 1px solid #ccc; /* Tambahkan border */
   border-radius: 4px; /* Sudut membulat */
   box-sizing: border-box; /* Pastikan padding termasuk dalam ukuran total */
+}
+
+.password-container {
+  position: relative; 
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Ruang untuk ikon di sebelah kanan */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Letakkan ikon di sebelah kanan */
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-password img {
+  width: 20px;
+  height: 20px;
+}
+
+p{
+  text-align: center;
+}
+/* Gaya umum untuk link */
+a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-size: 14px; /* Ukuran font */
+  color: #007bff; /* Warna teks */
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  max-width: 400px; /* Batas lebar maksimal */
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border-right: 1px solid #ccc;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  appearance: none; /* Hilangkan default dropdown icon */
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+#phone-number {
+  flex-grow: 1;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#phone-number:focus {
+  outline: none;
+}
+
+.phone-input:focus-within {
+  border-color: #007bff; /* Warna border saat fokus */
+}
+
+/* Tombol "daftar" */
+a.daftar {
+  display: inline-block; /* Tampilkan sebagai elemen blok */
+  padding: 10px 20px; /* Spasi dalam */
+  background-color: #E2FCD9CC; /* Warna latar belakang */
+  color: #3ECF4C; /* Warna teks */
+  border-radius: 4px; /* Sudut membulat */
+  font-size: 14px; /* Ukuran font */
+  font-weight: bold; /* Tebalkan teks */
+  text-align: center; /* Pusatkan teks */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  transition: 0.3s; /* Efek transisi */
+  
+}
+
+a.daftar:hover {
+  background-color: #e2fcd97c; /* Warna latar lebih gelap saat hover */
+}
+
+/* Tombol "Masuk" */
+input[type="button"] {
+  width: 100%; /* Lebar penuh */
+  padding: 10px 20px; /* Spasi dalam */
+  background-color: #3ECF4C; /* Warna hijau */
+  color: #ffffff; /* Warna teks */
+  border: none; /* Hilangkan border */
+  border-radius: 4px; /* Sudut membulat */
+  font-size: 14px; /* Ukuran font */
+  font-weight: bold; /* Tebalkan teks */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  transition: 0.3s; /* Efek transisi */
+}
+
+input[type="button"]:hover {
+  background-color: #218838; /* Warna lebih gelap saat hover */
+}
+
+/* "Lupa password?" di kanan */
+.lupa-password {
+  display: block; /* Blok vertikal */
+  text-align: right; /* Posisi kanan */
+  margin-bottom: 10px; /* Jarak bawah */
+  font-size: 14px; /* Ukuran font */
+}
+
+/* "Google" dalam satu baris */
+.google {
+  display: flex; /* Tampilkan dalam baris horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Pusatkan secara horizontal */
+  gap: 10px; /* Jarak antar elemen */
+  padding: 10px; /* Spasi dalam */
+  border: 1px solid #F1F1F1; /* Border ringan */
+  border-radius: 4px; /* Sudut membulat */
+  background-color: #FFFFFF; /* Warna latar belakang */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  transition: 0.3s; /* Efek transisi */
+  text-align: center; /* Pastikan teksnya terpusat */
+}
+
+.google:hover {
+  background-color: #f1f1f1; /* Warna lebih terang saat hover */
+}
+
+.google img {
+  width: 20px; /* Lebar logo Google */
+  height: 20px; /* Tinggi logo Google */
+}
+
+.google p {
+  margin: 0; /* Hilangkan margin */
+  font-size: 14px; /* Ukuran font */
+  color: #333; /* Warna teks */
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>register</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,19 +17,59 @@
     <section>
       <div class="masuk">
         <div class="desc">
-          <h3>Masuk ke Akun</h3>
-          <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+          <h3>Pendaftaran Akun</h3>
+          <p>Yuk, daftarkan akunmu sekarang juga!</p>
         </div>
         <div class="form">
           <form action="#">
+            <div class="inputfield">
+              <label for="Nama">Nama Lengkap <span>*</span></label>
+              <input type="text" id="Nama" placeholder="Nama" />
+
+            </div>
             <div class="inputfield">
               <label for="email">E-Mail <span>*</span></label>
               <input type="text" id="email" placeholder="email" />
 
             </div>
 
+            <div class="phone-input">
+              <div class="country-code">
+                <img src="assets/indonesia-flag-icon.svg" alt="Bendera Indonesia" class="flag-icon">
+                <select id="country-code">
+                  <option value="+62" selected>+62</option>
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                </select>
+              </div>
+              <input 
+                type="tel" 
+                id="phone-number" 
+                placeholder="Masukkan nomor telepon" 
+                required
+              >
+            </div>
+            
+
             <div class="inputfield">
               <label for="password">Kata Sandi <span>*</span></label>
+              <div class="password-container">
+                <input 
+                  type="password" 
+                  id="password" 
+                  placeholder="password" 
+                />
+                <span class="toggle-password">
+                  <img 
+                    src="assets/eye-password-hide-svgrepo-com.svg" 
+                    alt="Tampilkan Kata Sandi" 
+                    id="toggle-icon" 
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="inputfield">
+              <label for="password">Konfirmasi Kata Sandi <span>*</span></label>
               <div class="password-container">
                 <input 
                   type="password" 
