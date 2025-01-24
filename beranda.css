@@ -52,6 +52,29 @@ header {
   opacity: 0px;
 }
 
+header .icon {
+  display: none;
+}
+
+/* Mobile view: max-width 768px */
+@media screen and (max-width: 768px) {
+  #user {
+    display: none; /* Gambar disembunyikan di mobile */
+  }
+  .nav p {
+    display: none;
+  }
+
+  header .icon {
+    display: block; /* Ikon muncul di mobile */
+    width: 44px; /* Sesuaikan ukuran ikon */
+    height: 44px;
+    opacity: 1;
+  }
+
+  
+}
+
 main {
   width: 100%;
   height: 2581px;
@@ -101,6 +124,7 @@ section {
   position: relative;
   width: 920px;
 }
+
 .top-title h1 {
   font-family: Poppins;
   font-size: 48px;
@@ -114,6 +138,8 @@ section {
 .top-title p {
   line-height: 22.4px;
   text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .button {
@@ -164,6 +190,7 @@ section {
   display: flex;
   justify-content: flex-start;
   gap: 32px;
+  margin-bottom: 32px;
 }
 .tabs p {
   color: rgba(51, 51, 51, 0.68);
@@ -175,7 +202,8 @@ section {
 }
 .tabs p.selected {
   color: rgba(246, 73, 32, 1);
-  border-bottom: 2px solid rgba(246, 73, 32, 1);
+  border-bottom: 4px solid rgba(246, 73, 32, 1);
+  border-radius: 3px;
 }
 
 .card-general {
@@ -193,7 +221,7 @@ section {
 
 .card {
   width: 384px;
-  height: 426pxpx;
+  height: 426px;
   padding: 20px 0px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -204,15 +232,16 @@ section {
   background-color: rgba(255, 255, 255, 1);
   border: rgba(58, 53, 65, 0.12);
   align-items: center;
+  justify-content: center;
 }
 
-.card .cover img {
-  width: 344px;
+.card img.cover {
+  width: 324px;
   height: 193px;
   gap: 0px;
   border-radius: 10px 0px 0px 0px;
   opacity: 0px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .item-title {
