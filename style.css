@@ -1,39 +1,37 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-
-html,body {
-  background-color: #FFFDF3;
+html,
+body {
+  background-color: #fffdf3;
   width: 100%;
   height: 100%;
-  margin:0;
-  overflow: hidden;
+  margin: 0;
 }
 header {
   background-color: #ffffff;
-  display: flex; /* Menggunakan flexbox untuk tata letak */
-  justify-content: center; /* Pastikan kontainer berada di tengah secara horizontal */
-  align-items: center; /* Vertikal tengah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80px;
   padding: 0 120px;
   border-bottom: 1px solid #3a35411f;
   width: 100%;
   position: fixed;
   z-index: 100;
-  margin: 0;
+  margin-bottom: 36px;
 }
 
 .container {
   display: flex;
-  justify-content: space-between; /* Atur jarak antar elemen */
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Tetapkan batas lebar */
+  max-width: 1200px;
   width: 100%;
   z-index: 100;
   padding: 0;
   margin: 0 auto; /* Margin otomatis untuk memastikan perataan tengah */
-  
 }
 
 .logo img {
@@ -42,35 +40,29 @@ header {
 }
 
 section {
-  
-  width: 1440px; /* Lebar penuh */
-  height: 994px; /* Gunakan tinggi layar penuh */
-  display: flex; /* Gunakan flexbox */
-  justify-content: center; /* Pusatkan secara horizontal */
-  align-items: center; /* Pusatkan secara vertikal */
-  padding-top: 24px; /* Hilangkan padding */
+  width: 100%;
+  height: 994px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
   padding-bottom: 24px;
   top: 60px;
   z-index: 1;
 }
 
 .masuk {
-  border: 1px solid #f1f1f1; /* Gaya border */
-  width: 448px; /* Tetapkan lebar tetap */
-  border-radius: 4px; /* Sudut membulat */
-  background-color: #ffffff; /* Warna latar belakang */
-  padding: 36px; /* Spasi dalam */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-  margin-top: 64px;
-  /* Penyesuaian posisi */
-  position: fixed; /* Tetap relatif terhadap viewport */
-  top: 50%; /* Tempatkan 50% dari atas */
-  left: 50%; /* Tempatkan 50% dari kiri */
-  transform: translate(-50%, -50%); 
+  border: 1px solid #f1f1f1;
+  width: 448px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 36px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .desc {
-  text-align: center; /* Pusatkan teks */
+  text-align: center;
 }
 
 .desc h3 {
@@ -91,19 +83,18 @@ section {
   display: flex; /* Gunakan flexbox untuk tata letak fleksibel */
   flex-direction: column; /* Susunan kolom vertikal */
   gap: 10px; /* Tambahkan jarak antar elemen */
-  color:#4A505C;
+  color: #4a505c;
 }
 
 label {
   font-size: 16px; /* Ukuran font label */
   margin-bottom: 4px; /* Jarak antara label dan input */
- 
 }
-.inputfield{
+.inputfield {
   margin-bottom: 16px;
 }
 
-span{
+span {
   color: red;
 }
 
@@ -117,7 +108,7 @@ input {
 }
 
 .password-container {
-  position: relative; 
+  position: relative;
   width: 100%;
 }
 
@@ -144,7 +135,7 @@ input {
   height: 20px;
 }
 
-p{
+p {
   text-align: center;
 }
 /* Gaya umum untuk link */
@@ -209,15 +200,14 @@ select:focus {
 a.daftar {
   display: inline-block; /* Tampilkan sebagai elemen blok */
   padding: 10px 20px; /* Spasi dalam */
-  background-color: #E2FCD9CC; /* Warna latar belakang */
-  color: #3ECF4C; /* Warna teks */
+  background-color: #e2fcd9cc; /* Warna latar belakang */
+  color: #3ecf4c; /* Warna teks */
   border-radius: 4px; /* Sudut membulat */
   font-size: 14px; /* Ukuran font */
   font-weight: bold; /* Tebalkan teks */
   text-align: center; /* Pusatkan teks */
   cursor: pointer; /* Ubah kursor menjadi pointer */
   transition: 0.3s; /* Efek transisi */
-  
 }
 
 a.daftar:hover {
@@ -228,7 +218,7 @@ a.daftar:hover {
 input[type="button"] {
   width: 100%; /* Lebar penuh */
   padding: 10px 20px; /* Spasi dalam */
-  background-color: #3ECF4C; /* Warna hijau */
+  background-color: #3ecf4c; /* Warna hijau */
   color: #ffffff; /* Warna teks */
   border: none; /* Hilangkan border */
   border-radius: 4px; /* Sudut membulat */
@@ -246,36 +236,35 @@ input[type="button"]:hover {
 .lupa-password {
   display: block; /* Blok vertikal */
   text-align: right; /* Posisi kanan */
-  margin-bottom: 10px; /* Jarak bawah */
-  font-size: 14px; /* Ukuran font */
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
-/* "Google" dalam satu baris */
 .google {
-  display: flex; /* Tampilkan dalam baris horizontal */
-  align-items: center; /* Pusatkan secara vertikal */
-  justify-content: center; /* Pusatkan secara horizontal */
-  gap: 10px; /* Jarak antar elemen */
-  padding: 10px; /* Spasi dalam */
-  border: 1px solid #F1F1F1; /* Border ringan */
-  border-radius: 4px; /* Sudut membulat */
-  background-color: #FFFFFF; /* Warna latar belakang */
-  cursor: pointer; /* Ubah kursor menjadi pointer */
-  transition: 0.3s; /* Efek transisi */
-  text-align: center; /* Pastikan teksnya terpusat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
 }
 
 .google:hover {
-  background-color: #f1f1f1; /* Warna lebih terang saat hover */
+  background-color: #f1f1f1;
 }
 
 .google img {
-  width: 20px; /* Lebar logo Google */
-  height: 20px; /* Tinggi logo Google */
+  width: 20px;
+  height: 20px;
 }
 
 .google p {
-  margin: 0; /* Hilangkan margin */
-  font-size: 14px; /* Ukuran font */
-  color: #333; /* Warna teks */
+  margin: 0;
+  font-size: 14px;
+  color: #333;
 }

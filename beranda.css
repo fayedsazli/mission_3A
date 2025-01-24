@@ -37,7 +37,6 @@ header {
   height: 56px;
   margin-right: 36px;
   align-items: center;
-
 }
 .nav img {
   width: 237px;
@@ -346,22 +345,22 @@ p {
   align-items: center;
 }
 
-.enter_email button{
-  background-color: rgba(255, 189, 58, 1); 
-  color: white; 
-  padding: 15px 32px; 
+.enter_email button {
+  background-color: rgba(255, 189, 58, 1);
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  text-decoration: none; 
-  display: inline-block; 
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer; 
-  border-radius: 10px; 
+  cursor: pointer;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
 }
-
 
 footer {
   margin-top: 64px;
@@ -452,5 +451,4 @@ footer .line {
 .SocialMedia {
   display: flex;
   gap: 15px;
-
 }
