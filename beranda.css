@@ -253,7 +253,7 @@ p {
   font-weight: 600;
   line-height: 21.6px;
   text-align: left;
-  color: rgba(34, 35, 37, 1);
+  color: rgb(37, 34, 34);
 }
 
 .card-user {
@@ -511,6 +511,8 @@ footer .line {
     border-radius: 10px 0px 0px 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    align-items: center;
+    justify-content: center
   }
   .card img.cover {
     width: 82px;
@@ -523,15 +525,47 @@ footer .line {
   .card-res {
     display: flex;
     flex-direction: row;
+    width: 300px;
+
   }
   .item-title-res{
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
-  .item-title {
-    width: 194px;
-    height: 38px;
-    gap: 8px;
-    opacity: 0px;
+  .item-title{
+    padding: 0;
+    width: auto;
+    margin: 0;
+    height: auto;
   }
+  .item-title h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+  }
+  .item-title p{
+    display: none;
+
+  }
+  /* bawah mobile */
+
+  .bot-title {
+    width: 280px !important;
+  }
+  .bot-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    display: block;
+  }
+  .enter_email {
+    width: 280px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.20000000298023224px;
+  }
+
 }
