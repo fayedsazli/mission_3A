@@ -512,4 +512,26 @@ footer .line {
     border: 1px 0px 0px 0px;
     opacity: 0px;
   }
+  .card img.cover {
+    width: 82px;
+    height: 82px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .card-res {
+    display: flex;
+    flex-direction: row;
+  }
+  .item-title-res{
+    display: flex;
+    flex-direction: column;
+  }
+  .item-title {
+    width: 194px;
+    height: 38px;
+    gap: 8px;
+    opacity: 0px;
+  }
 }
