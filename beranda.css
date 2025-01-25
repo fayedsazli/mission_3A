@@ -568,4 +568,20 @@ footer .line {
     letter-spacing: 0.20000000298023224px;
   }
 
+  .content-footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .right-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-footer p{
+    display: none;
+  }
+  .text-footer{
+    gap: 0px;
+  }
+
 }
